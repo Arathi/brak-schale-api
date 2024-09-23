@@ -1,4 +1,4 @@
-# Modern.js Package
+# @brak/schale-api
 
 ## Setup
 

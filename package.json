@@ -1,6 +1,7 @@
 {
-  "name": "schale-api-modern",
-  "version": "0.1.0",
+  "name": "@brak/schale-api",
+  "version": "0.1.1",
+  "private": false,
   "types": "./dist/types/index.d.ts",
   "main": "./dist/lib/index.js",
   "module": "./dist/es/index.js",
@@ -18,7 +19,8 @@
     "gen-release-note": "modern gen-release-note",
     "release": "modern release",
     "new": "modern new",
-    "upgrade": "modern upgrade"
+    "upgrade": "modern upgrade",
+    "test": "vitest"
   },
   "lint-staged": {
     "*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}": [
@@ -28,20 +30,16 @@
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
   },
-  "dependencies": {},
-  "peerDependencies": {},
   "devDependencies": {
-    "@modern-js/module-tools": "2.60.1",
     "@biomejs/biome": "1.8.3",
-    "typescript": "~5.0.4",
-    "@types/node": "~16.11.7",
-    "rimraf": "^6.0.1",
+    "@modern-js/module-tools": "2.60.1",
+    "@types/node": "~20.16.5",
+    "jsdom": "^25.0.1",
     "lint-staged": "~13.1.0",
-     "simple-git-hooks": "^2.11.1"
+    "rimraf": "^6.0.1",
+    "simple-git-hooks": "^2.11.1",
+    "typescript": "~5.0.4",
+    "vitest": "^2.1.1"
   },
-  "sideEffects": [],
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org/"
-  }
+  "sideEffects": []
 }
